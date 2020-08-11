@@ -6,8 +6,8 @@ $Phone=$_POST['telnum'];
 $Amount=$_POST['amount'];
 $purpose='Donation';
 
-include 'instamojo/Instamojo.php';
-$api = new Instamojo\Instamojo('test_3743a7a31d4c8d710f488ba8e39', 'test_2df6effdc4b9b2e6dd53dddd5a1', 'https://test.instamojo.com/api/1.1/');
+include 'Instamojo/Instamojo.php';
+$api = new Instamojo\Instamojo('test_50e73d7b55322908f181f93f97e', 'test_34226f83ae8ec3a27258514181b', 'https://test.instamojo.com/api/1.1/');
 
 try {
     $response = $api->paymentRequestCreate(array(
@@ -19,7 +19,7 @@ try {
         "phone"=>$Phone,
         "send_sms" => true,
         "allow_repeated_payments" =>false,
-        "redirect_url" => "https://payment-gateway-integration.000webhostapp.com/redirect.php"
+        "redirect_url" => "https://salonigharge.github.io/Donationgateway/redirect.php"
         ));
     //print_r($response);
     $pay_url=$response['longurl'];
