@@ -22,8 +22,9 @@ try {
         "redirect_url" => "https://salonigharge.github.io/Donationgateway/redirect.php"
         ));
     //print_r($response);
-    $pay_url=$response['longurl'];
-    header("location: $pay_url");
+    $json_decode=json_decode(response,true);
+    $long_url=$json_decode['payment_request']['longurl'];
+    header("location: $long_url");
 	}
 	catch (Exception $e) {
 	    print('Error: ' . $e->getMessage());
