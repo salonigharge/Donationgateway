@@ -1,3 +1,4 @@
+
 <?php
 
 $Name=$_POST['name'];
@@ -5,8 +6,6 @@ $Email=$_POST['email'];
 $Phone=$_POST['telnum'];
 $Amount=$_POST['amount'];
 $purpose='Donation';
-
-<?php
 
 $ch = curl_init();
 
