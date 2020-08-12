@@ -23,8 +23,9 @@ try {
         ));
     //print_r($response);
     $json_decode=json_decode(response,true);
+    print($json_decode);
     $long_url=$json_decode['payment_request']['longurl'];
-    header("location: $long_url");
+   // header("location: $long_url");
 	}
 	catch (Exception $e) {
 	    print('Error: ' . $e->getMessage());
