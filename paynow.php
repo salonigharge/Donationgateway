@@ -31,9 +31,9 @@ curl_setopt($ch, CURLOPT_POST, true);
 curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query($payload));
 $response = curl_exec($ch);
 curl_close($ch); 
-
-$json_decode=json_decode($response,true);
-$long_url=$json_decode['payment_request']['longurl']
-header(location:$long_url);
+echo ($request);
+//$json_decode=json_decode($response,true);
+//$long_url=$json_decode['payment_request']['longurl']
+//header(location:$long_url);
 
 ?>
