@@ -1,5 +1,10 @@
 
 <?php
+$Name=$_POST['name'];
+$Email=$_POST['email'];
+$Amount=$_POST['amount'];
+$Phone=$_POST['telnum'];
+$purpose='Donation';
 
 $ch = curl_init();
 
@@ -15,7 +20,7 @@ $payload = Array(
     'amount' => '10',
     'phone' => '7507070297',
     'buyer_name' => 'saloni',
-    'redirect_url' => 'https://salonigharge.github.io/Donationgateway/redirect.php',
+    'redirect_url' => 'https://donationgateway.herokuapp.com/redirect.php',
     'send_email' => true,
     'webhook' => '',
     'send_sms' => false,
@@ -27,6 +32,8 @@ curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query($payload));
 $response = curl_exec($ch);
 curl_close($ch); 
 
-echo $response;
+$json_decode=json_decode($response,true);
+$long_url=$json_decode['payment_request']['longurl']
+header(location:$long_url);
 
 ?>
