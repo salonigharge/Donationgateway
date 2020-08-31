@@ -26,8 +26,8 @@
 }
 </style>
 </head>
-
-  <body>
+<body>
+  <!--NAVBAR START -->
     <nav class="navbar navbar-dark bg-dark navbar-expand-sm fixed-top">
         <div class="container">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
@@ -45,6 +45,9 @@
              </div>  
         </div>    
     </nav>
+<!--NAVBAR END -->
+
+<!--THANKYOU CARD-->
     <div class="container" style="padding-top: 20px;">
       <div class="page-header" style="background-color: white;opacity:0.8;">
         <strong><p style="font-size:34px;"><i>2020 Disaster Relief- Thankyou For Your Donation!</i></p></strong>
@@ -87,7 +90,8 @@ catch (Exception $e) {
 <div style="background-color: black; font-size: 15px;text-align: center; color: white;"><i>Kindly Check Your Email For Transaction Details and confirmation message!</i> </div>  
 </div>
 </div>   
-    </div> <!-- /container -->
+</div> 
+<!--THANKYOU CARD-->
 
  <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

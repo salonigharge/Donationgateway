@@ -1,3 +1,7 @@
+body{
+	padding: 50px 0px 0px 0px;
+	z-index:0;
+}
 .nav-item{
 	color :ffa500;
 }
@@ -27,11 +31,6 @@
 	margin: 0px;
 	color: #0f0f0f;
 }
-body{
-	padding: 50px 0px 0px 0px;
-	z-index:0;
-}
-
 .tab-content{
 	border-right: 1px solid #ddd;
 	border-left: 1px solid #ddd;
