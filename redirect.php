@@ -28,7 +28,24 @@
 </head>
 
   <body>
-    <div class="container">
+    <nav class="navbar navbar-dark bg-dark navbar-expand-sm fixed-top">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+                <span class="navbar-toggler-icon"> </span>   
+            </button>
+            <a class="navbar-brand mr-auto" href="index.html"><i>2020-Disaster Relief</i></a>
+            <div class="collapse navbar-collapse" id="Navbar">
+               <ul class="navbar-nav ml-auto">
+                  <li class="nav-item"><a class="nav-link" href="index.html"><span class="fa fa-home fa-lg"></span> Home</a></li>
+                  <li class="nav-item "><a class="nav-link" href="./aboutus.html"><span class="fa fa-info fa-lg"></span> About Us</a></li>
+                  <li class="nav-item"><a class="nav-link" href="./faq.html"><span class="fa fa-list fa-lg"></span> FAQ's</a></li>
+                  <li class="nav-item"><a class="nav-link" href="./contactus.html"><span class="fa fa-address-card fa-lg"></span> Contact Us</a></li>   
+               </ul>
+            
+             </div>  
+        </div>    
+    </nav>
+    <div class="container" style="padding-top: 20px;">
       <div class="page-header" style="background-color: white;opacity:0.8;">
         <strong><p style="font-size:34px;"><i>2020 Disaster Relief- Thankyou For Your Donation!</i></p></strong>
     <p style="font-size: 20px;"><i> We sincerely thank you for your generous donation, which will be of great help in our relief and rehabilitation efforts towards those affected by the 2020 disasters. We were able to help the wounded, only with the kindly donated amounts from people like you. You have done a great service towards our foundation.</i>
